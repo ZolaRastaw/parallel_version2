@@ -3,8 +3,9 @@
 #include <cstdlib>
 #include <ctime>
 #include <omp.h>
+#include <vector>
 
-const int N = 1000000;
+const int N = 10000;
 
 int main()
 {

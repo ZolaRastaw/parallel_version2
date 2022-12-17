@@ -1,0 +1,10 @@
+^D:\PARALLEL\OPENAI\PARALLEL_VERSION2\BUILD\CMAKEFILES\417A577513A76921F30A374D17DD9CA1\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/Parallel/openai/parallel_version2/source -BD:/Parallel/openai/parallel_version2/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/Parallel/openai/parallel_version2/build/parallel_version2.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
